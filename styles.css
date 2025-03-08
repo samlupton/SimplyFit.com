@@ -1,36 +1,78 @@
-/* styles.css */
+/* Color Scheme */
+:root {
+    --primary: #477AC8;
+    --dark-bg: #121212;
+    --secondary-bg: #212121;
+    --light-text: #FBFAF5;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #FBFAF5;
+    background: var(--dark-bg);
+    color: var(--light-text);
     margin: 0;
     padding: 0;
 }
-nav {
-    background-color: #477AC8;
-    padding: 1rem;
+
+header {
+    background: var(--secondary-bg);
+    padding: 20px;
+    text-align: center;
 }
-ul {
+
+header h1 {
+    margin: 0;
+    color: var(--primary);
+}
+
+nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     padding: 0;
 }
-li {
+
+nav ul li {
     display: inline;
+    margin: 0 15px;
 }
-a {
-    color: white;
+
+nav ul li a {
+    color: var(--light-text);
     text-decoration: none;
     font-weight: bold;
 }
-.section {
-    padding: 50px;
+
+.landing {
     text-align: center;
+    padding: 50px;
 }
-.appstore-badge {
-    margin-top: 20px;
+
+.app-store-btn img {
     width: 150px;
-    height: auto;
+    margin-top: 10px;
+}
+
+#summary, #privacy, #terms {
+    padding: 40px;
+    background: var(--secondary-bg);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.screenshots {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.screenshots img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--secondary-bg);
 }
