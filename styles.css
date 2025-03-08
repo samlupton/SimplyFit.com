@@ -1,78 +1,70 @@
-/* Color Scheme */
-:root {
-    --primary: #477AC8;
-    --dark-bg: #121212;
-    --secondary-bg: #212121;
-    --light-text: #FBFAF5;
-}
-
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background: var(--dark-bg);
-    color: var(--light-text);
+    background-color: #FBFAF5;
+    color: #121212;
     margin: 0;
     padding: 0;
 }
-
-header {
-    background: var(--secondary-bg);
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    color: var(--primary);
-}
-
 nav ul {
+    background-color: #212121;
+    padding: 10px;
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: var(--light-text);
+nav a {
+    color: #FBFAF5;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
-
-.landing {
+nav a:hover {
+    color: #477AC8;
+}
+.hero {
     text-align: center;
     padding: 50px;
+    background-color: #477AC8;
+    color: white;
 }
-
-.app-store-btn img {
-    width: 150px;
-    margin-top: 10px;
-}
-
-#summary, #privacy, #terms {
-    padding: 40px;
-    background: var(--secondary-bg);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.screenshots {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.app-store-btn {
+    display: inline-block;
     margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-
-.screenshots img {
-    width: 200px;
+.app-store-btn:hover {
+    background-color: #212121;
+}
+.features {
+    text-align: center;
+    padding: 40px;
+}
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.feature {
+    background: #477AC8;
+    color: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
-
+.feature:hover {
+    transform: scale(1.05);
+}
 footer {
     text-align: center;
     padding: 20px;
-    background: var(--secondary-bg);
+    background-color: #212121;
+    color: #FBFAF5;
 }
